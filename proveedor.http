@@ -1,0 +1,72 @@
+### Primera solicitud registro nuevo
+POST http://localhost:3001/Proveedor/Registrar HTTP/1.1
+Content-Type: application/json
+
+{
+      "rif":2312313,
+      "nombre":"pepito",
+      "direccion":"paloweko",
+      "correo":"xd@gmail.com",
+      "tipoRif": "V",
+      "ultimoNumero":1,
+      "tlf":3212312
+}
+
+
+### Primera solicitud registro nuevo
+POST http://localhost:3001/Proveedor/Registrar HTTP/1.1
+Content-Type: application/json
+
+{
+      "rif":15415841,
+      "nombre":"mariko",
+      "direccion":"santaqlo",
+      "correo":"ppppd@gmail.com",
+      "tipoRif": "G",
+      "ultimoNumero":1,
+      "tlf":66777444
+}
+
+### Segunda solicitud actualizar todo
+PUT http://localhost:3001/Proveedor/Actualizar HTTP/1.1
+Content-Type: application/json
+
+{
+      "id": 2,
+      "rif":15415841,
+      "nombre":"kaldoso",
+      "direccion":"muñeko",
+      "correo":"becerro@gmail.com",
+      "tipoRif": "H",
+      "ultimoNumero":5,
+      "tlf":"34445555"
+}
+###solicitar datos
+GET http://localhost:3001/Proveedor/Datos HTTP/1.1
+
+### solicitud para activar o desactivar
+
+PATCH  http://localhost:3001/Proveedor/Estado HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":2,
+    "estado":true,
+    "token":"sdsad"
+}
+###
+PATCH  http://localhost:3001/Proveedor/Estado HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":2,
+    "estado":false,
+    "token":"sdsad"
+}
+
+
+###
+DELETE http://localhost:3001/Proveedor/Eliminar/7 HTTP/1.1
+Authorization: Bearer tu_token_secreto
+
+

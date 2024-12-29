@@ -1,0 +1,33 @@
+### Primera solicitud registro nuevo
+POST http://localhost:3001/Factura/Crear HTTP/1.1
+Content-Type: application/json
+
+{ "forma": ["1", "2", "3"], "dinero": ["200", "200.2", "87"], "referencia": ["1", "2", "3"] }
+
+### Primera solicitud registro nuevo
+GET http://localhost:3001/Factura/Pagos HTTP/1.1
+
+### Primera solicitud registro nuevo
+DELETE  http://localhost:3001/Factura/Eliminar/29 HTTP/1.1
+
+
+### activar Factura
+PATCH  http://localhost:3001/Factura/Estado HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":27,
+    "estado":true,
+    "token":"sdsad"
+}
+
+### desactivar Factura
+PATCH  http://localhost:3001/Factura/Estado HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":27,
+    "estado":false,
+    "token":"sdsad"
+}
+

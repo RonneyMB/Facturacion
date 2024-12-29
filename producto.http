@@ -1,0 +1,123 @@
+### Primera solicitud registro nuevo
+POST http://localhost:3001/Productos/Registrar HTTP/1.1
+Content-Type: application/json
+
+{
+    "cod":123,
+    "nombre":"coca",
+    "descripcion":"tas fina",
+    "cantidad":0,
+    "precio":10,
+    "tipo":"materia Prima",
+    "medicion":"unidad",
+    "stockmin":10,
+    "stockmax":100
+}
+
+
+### Primera solicitud registro nuevo
+POST http://localhost:3001/Productos/Registrar HTTP/1.1
+Content-Type: application/json
+
+{
+    "cod":143,
+    "nombre":"meta",
+    "descripcion":"de chil",
+    "cantidad":0,
+    "precio":30,
+    "tipo":"Producto",
+    "medicion":"kg",
+    "stockmin":10,
+    "stockmax":100
+}
+### Primera solicitud registro nuevo
+POST http://localhost:3001/Productos/Registrar HTTP/1.1
+Content-Type: application/json
+
+{
+    "cod":153,
+    "nombre":"azulito",
+    "descripcion":"i am blue",
+    "cantidad":0,
+    "precio":25,
+    "tipo":"materia Fabricable",
+    "medicion":"lt",
+    "stockmin":10,
+    "stockmax":100
+}
+### Primera solicitud registro nuevo
+POST http://localhost:3001/Productos/Registrar HTTP/1.1
+Content-Type: application/json
+
+{
+    "cod":163,
+    "nombre":"azulito",
+    "descripcion":"i am blue",
+    "cantidad":0,
+    "precio":25,
+    "tipo":"Producto Fabricable",
+    "medicion":"lt",
+    "stockmin":10,
+    "stockmax":100
+}
+### Primera solicitud registro nuevo
+POST http://localhost:3001/Productos/Registrar HTTP/1.1
+Content-Type: application/json
+
+{
+    "cod":723,
+    "nombre":"amarillo",
+    "descripcion":"kioken",
+    "cantidad":0,
+    "precio":15,
+    "tipo":"multi uso",
+    "medicion":"lt",
+    "stockmin":10,
+    "stockmax":100
+}
+
+### Segunda solicitud actualizar todo
+PUT http://localhost:3001/Productos/Actualizar HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":2,
+    "cod":8907677,
+    "nombre":"kamarillosos",
+    "descripcion":"takioken2",
+    "cantidad":50777,
+    "precio":17,
+    "tipo":"herramienta",
+    "medicion":"unidad",
+    "stockmin":5,
+    "stockmax":110
+}
+###solicitar datos
+GET http://localhost:3001/Productos/Datos HTTP/1.1
+
+### solicitud para activar o desactivar
+
+PATCH  http://localhost:3001/Productos/Estado HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":2,
+    "estado":true,
+    "token":"sdsad"
+}
+###
+PATCH  http://localhost:3001/Productos/Estado HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":2,
+    "estado":false,
+    "token":"sdsad"
+}
+
+
+###
+DELETE http://localhost:3001/Productos/Eliminar/7 HTTP/1.1
+Authorization: Bearer tu_token_secreto
+
+
